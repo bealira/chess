@@ -5,6 +5,8 @@
  */
 package chess;
 
+import boardGame.Position;
+
 /**
  *
  * @author Bea
@@ -17,6 +19,9 @@ public class Chess {
     public static void main(String[] args) {
         
         System.out.println("Welcome to the chess game!");
+        
+        Position position=new Position(3, 5);
+        System.out.println(position.toString());
         
     }
     
