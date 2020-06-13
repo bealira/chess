@@ -5,7 +5,9 @@
  */
 package chess;
 
+import boardGame.Board;
 import boardGame.Position;
+import chessPackage.ChessMatch;
 
 /**
  *
@@ -18,10 +20,18 @@ public class Chess {
      */
     public static void main(String[] args) {
         
-        System.out.println("Welcome to the chess game!");
+        //criar programa
+        //System.out.println("Welcome to the chess game!");
         
+        /*aula 2, criar position
         Position position=new Position(3, 5);
-        System.out.println(position.toString());
+        System.out.println(position.toString());*/
+        
+        //aula 3, criar tabuleiro
+        //Board board=new Board(8, 8);
+        
+        ChessMatch chessMatch=new ChessMatch();
+        UI.printBoard(chessMatch.getPieces());
         
     }
     
